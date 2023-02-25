@@ -1,0 +1,15 @@
+syntax="proto3";
+
+package User;
+
+service userservice{
+    rpc create(Id) returns (Hello){}
+    rpc update(Id) returns (Hello){}
+}
+message Id{
+}
+
+message Hello{
+string name=1;
+}
+
